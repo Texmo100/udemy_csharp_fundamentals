@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace udemy_csharp_practice_04.Math
+namespace Practice_04.Math
 {
     public class Calculator
     {

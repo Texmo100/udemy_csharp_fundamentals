@@ -1,7 +1,7 @@
-﻿using System;
-using udemy_csharp_practice_04.Math;
+﻿using Practice_04.Math;
+using System;
 
-namespace udemy_csharp_practice_04
+namespace Practice_04
 {
     // Enum
     public enum ShippingMethod

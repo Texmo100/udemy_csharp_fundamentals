@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace udemy_csharp_practice_001
+namespace Practice_01
 {
     class Program
     {
