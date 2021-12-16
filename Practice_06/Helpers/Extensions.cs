@@ -44,13 +44,9 @@ namespace Practice_06.Helpers
         {
             var result = numbers.Where(n => n == number).Count();
             if (result == 1)
-            {
                 return true;
-            }
             else
-            {
                 return false;
-            }
         }
 
         public static bool IsValidSeparatedByComma(this string str)
@@ -61,6 +57,11 @@ namespace Practice_06.Helpers
                 return true;
             }
             return false;
+        }
+
+        public static List<int> OrderList(this List<int> list)
+        {
+            return list.OrderBy(n => n).ToList();
         }
     }
 }

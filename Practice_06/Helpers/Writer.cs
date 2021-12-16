@@ -152,7 +152,7 @@ namespace Practice_06.Helpers
             return numbers;
         }
 
-        public int[] NumbersSeparatedByCommaWriter(string firstMsg, string secondMsg)
+        public List<int> NumbersSeparatedByCommaWriter(string firstMsg, string secondMsg)
         {
             Console.WriteLine(firstMsg);
             Console.WriteLine(secondMsg);
@@ -163,11 +163,12 @@ namespace Practice_06.Helpers
                 {
                     var stringNumbers = userInput.Split(',');
 
-                    int[] numbers = new int[stringNumbers.Length];
+                    var numbers = new List<int>();
 
                     for (var i = 0; i < stringNumbers.Length; i++)
                     {
-                        numbers[i] = Convert.ToInt32(stringNumbers[i]);
+                        if (!stringNumbers[i].IsNumeric() || stringNumbers[i].Equals("")) continue;
+                        numbers.Add(Convert.ToInt32(stringNumbers[i]));
                     }
 
                     return numbers;

@@ -39,15 +39,14 @@ namespace Practice_06
 
         public void SmallestNumbers()
         {
-            // This needs to be fix
-            var numbersSeparatedByComma = _writer.NumbersSeparatedByCommaWriter
+            var numberList = _writer.NumbersSeparatedByCommaWriter
                 (
                     "You need to enter a series of numbers separated by comma", 
                     "Enter the numbers separated by comma: "
                 );
-
-            _printer.ArrayPrinter(numbersSeparatedByComma);
+            var orderedNumberList = numberList.OrderList();
+            _printer.IntegerListByCommaPrinter(orderedNumberList);
+            _printer.ThreeSmallestNumbersPrinter(orderedNumberList);
         }
-
     }
 }
