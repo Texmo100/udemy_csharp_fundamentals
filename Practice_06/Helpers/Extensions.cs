@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Practice_06.Helpers
+namespace Practice_07.Helpers
 {
     public static class Extensions
     {

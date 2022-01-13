@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Practice_06.Helpers
+namespace Practice_07.Helpers
 {
     public class Writer
     {

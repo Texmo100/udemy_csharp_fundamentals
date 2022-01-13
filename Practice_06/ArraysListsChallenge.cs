@@ -1,10 +1,10 @@
-﻿using Practice_06.Helpers;
+﻿using Practice_07.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Practice_06
+namespace Practice_07
 {
     public class ArraysListsChallenge
     {
